@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Desi Thadaka | India Ka Apna Snack</title>
+
+<style>
+
+/* ==============================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+
+/* ==============================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 104, 0, 0.18),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(185, 149, 232, 0.18),
+            transparent 28%
+        ),
+        #0b0b0b;
+}
+
+
+/* ==============================
+   ORANGE BRUSHES
+================================ */
+
+.orange-brush {
+    position: absolute;
+    background: #ff6800;
+    z-index: 1;
+}
+
+.brush-one {
+    width: 60%;
+    height: 100px;
+
+    top: -25px;
+    right: -8%;
+
+    transform: rotate(-7deg);
+
+    clip-path: polygon(
+        0 30%,
+        10% 10%,
+        25% 25%,
+        40% 5%,
+        58% 25%,
+        75% 10%,
+        100% 30%,
+        94% 75%,
+        75% 60%,
+        55% 85%,
+        35% 65%,
+        15% 85%,
+        0 65%
+    );
+}
+
+.brush-two {
+    width: 45%;
+    height: 80px;
+
+    bottom: 5%;
+    left: -8%;
+
+    transform: rotate(-7deg);
+
+    clip-path: polygon(
+        0 35%,
+        12% 15%,
+        28% 30%,
+        45% 8%,
+        62% 25%,
+        80% 10%,
+        100% 35%,
+        94% 70%,
+        75% 55%,
+        58% 85%,
+        38% 65%,
+        18% 85%,
+        0 65%
+    );
+}
+
+
+/* ==============================
+   PURPLE SHAPES
+================================ */
+
+.purple-shape {
+    position: absolute;
+    background: #b995e8;
+    z-index: 1;
+}
+
+.purple-one {
+    width: 350px;
+    height: 100px;
+
+    left: -80px;
+    top: 14%;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        20% 15%,
+        40% 28%,
+        60% 8%,
+        80% 25%,
+        100% 15%,
+        95% 70%,
+        75% 58%,
+        55% 82%,
+        35% 62%,
+        15% 78%
+    );
+}
+
+.purple-two {
+    width: 420px;
+    height: 100px;
+
+    right: -120px;
+    bottom: 8%;
+
+    transform: rotate(-10deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 10%,
+        30% 25%,
+        50% 5%,
+        70% 25%,
+        90% 10%,
+        100% 30%,
+        95% 75%,
+        75% 60%,
+        55% 85%,
+        35% 65%,
+        15% 85%
+    );
+}
+
+
+/* ==============================
+   INDIA BADGE
+================================ */
+
+.india-badge {
+    position: absolute;
+
+    top: 45px;
+    left: 45px;
+
+    width: 150px;
+
+    padding: 18px 15px;
+
+    background: #b995e8;
+    color: #111;
+
+    text-align: center;
+
+    font-size: 17px;
+    font-weight: 900;
+
+    line-height: 1.15;
+    letter-spacing: 1px;
+
+    transform: rotate(-4deg);
+
+    z-index: 5;
+
+    clip-path: polygon(
+        0 15%,
+        8% 5%,
+        20% 13%,
+        35% 3%,
+        50% 12%,
+        68% 4%,
+        82% 12%,
+        100% 5%,
+        96% 85%,
+        80% 75%,
+        65% 88%,
+        48% 76%,
+        30% 90%,
+        15% 78%,
+        0 88%
+    );
+}
+
+
+/* ==============================
+   MAIN CONTENT
+================================ */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+
+    width: min(850px, 70%);
+
+    text-align: center;
+
+    transform: translateY(-20px);
+}
+
+
+/* ==============================
+   DECORATIVE CIRCLE
+================================ */
+
+.brand-circle {
+    width: 115px;
+    height: 115px;
+
+    margin: 0 auto -55px;
+
+    border: 4px solid #ff6800;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 10px;
+
+    color: #ff6800;
+
+    font-size: 30px;
+}
+
+
+/* ==============================
+   BRAND NAME
+================================ */
+
+.hero h1 {
+    position: relative;
+    z-index: 2;
+
+    line-height: 0.85;
+
+    text-transform: uppercase;
+}
+
+.desi {
+    display: block;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(85px, 12vw, 175px);
+
+    font-weight: 900;
+    font-style: italic;
+
+    color: white;
+
+    letter-spacing: -8px;
+
+    text-shadow:
+        5px 5px 0 #151515,
+        -2px 0 white;
+}
+
+.thadaka {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: clamp(55px, 8vw, 120px);
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+
+    color: #ff6800;
+
+    text-shadow: 4px 4px 0 #111;
+}
+
+
+/* ==============================
+   PURPLE LINE
+================================ */
+
+.brand-line {
+    width: 240px;
+    height: 5px;
+
+    margin: 22px auto 14px;
+
+    background: #b995e8;
+
+    transform: rotate(-2deg);
+
+    clip-path: polygon(
+        0 30%,
+        20% 5%,
+        40% 35%,
+        60% 0,
+        80% 30%,
+        100% 10%,
+        97% 70%,
+        75% 50%,
+        55% 85%,
+        35% 60%,
+        15% 80%
+    );
+}
+
+
+/* ==============================
+   TAGLINE
+================================ */
+
+.tagline {
+    color: #b995e8;
+
+    font-size: clamp(18px, 2.2vw, 28px);
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    margin-top: 15px;
+}
+
+.sub-tagline {
+    margin-top: 18px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+
+/* ==============================
+   PRICE BOX
+================================ */
+
+.price-box {
+    position: absolute;
+
+    right: 6%;
+    top: 20%;
+
+    width: 245px;
+
+    padding: 25px 20px;
+
+    background: #111;
+
+    border: 5px solid #ff6800;
+
+    transform: rotate(3deg);
+
+    text-align: center;
+
+    z-index: 6;
+
+    clip-path: polygon(
+        4% 5%,
+        95% 0,
+        100% 90%,
+        5% 100%
+    );
+
+    box-shadow: 10px 10px 0 rgba(185,149,232,0.8);
+}
+
+.starting {
+    font-size: 17px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+.price {
+    font-size: 90px;
+
+    line-height: 0.95;
+
+    font-weight: 1000;
+
+    color: white;
+
+    margin: 5px 0;
+
+    text-shadow: 4px 4px 0 #ff6800;
+}
+
+.only {
+    color: #ff6800;
+
+    font-size: 20px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+}
+
+
+/* ==============================
+   DESI SWAAD BADGE
+================================ */
+
+.swad-badge {
+    position: absolute;
+
+    right: 8%;
+    bottom: 17%;
+
+    width: 145px;
+    height: 145px;
+
+    border-radius: 50%;
+
+    background: #111;
+
+    border: 3px solid #b995e8;
+
+    outline: 3px dashed #ff6800;
+    outline-offset: -12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    transform: rotate(-10deg);
+
+    z-index: 6;
+}
+
+.swad-badge span {
+    color: #b995e8;
+
+    font-size: 18px;
+
+    font-weight: 1000;
+}
+
+.swad-badge small {
+    margin-top: 8px;
+
+    color: #ff6800;
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+
+/* ==============================
+   BOTTOM PURPLE AREA
+================================ */
+
+.bottom-decoration {
+    position: absolute;
+
+    bottom: -15px;
+    left: 0;
+
+    width: 100%;
+    height: 130px;
+
+    background: #b995e8;
+
+    clip-path: polygon(
+        0 30%,
+        10% 15%,
+        20% 25%,
+        30% 10%,
+        40% 25%,
+        50% 5%,
+        60% 20%,
+        70% 8%,
+        80% 25%,
+        90% 10%,
+        100% 25%,
+        100% 100%,
+        0 100%
+    );
+
+    z-index: 2;
+}
+
+
+/* ==============================
+   SIMPLE INDIAN LANDMARK
+================================ */
+
+.landmark {
+    position: absolute;
+
+    bottom: 12px;
+    left: 7%;
+
+    width: 230px;
+    height: 65px;
+
+    border-bottom: 4px solid #111;
+
+    color: #111;
+
+    text-align: center;
+}
+
+.dome {
+    position: absolute;
+
+    width: 55px;
+    height: 35px;
+
+    left: 87px;
+    top: 0;
+
+    border-radius: 55px 55px 0 0;
+
+    border: 4px solid #111;
+
+    border-bottom: none;
+}
+
+.building {
+    position: absolute;
+
+    left: 65px;
+    top: 32px;
+
+    width: 100px;
+    height: 30px;
+
+    border: 4px solid #111;
+
+    font-size: 11px;
+
+    font-weight: 1000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+    .price-box {
+        right: 3%;
+        top: 18%;
+
+        width: 190px;
+    }
+
+    .price {
+        font-size: 70px;
+    }
+
+    .swad-badge {
+        right: 4%;
+        bottom: 18%;
+    }
+
+    .hero-content {
+        width: 75%;
+    }
+
+    .india-badge {
+        left: 25px;
+        top: 30px;
+    }
+}
+
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 850px;
+
+        align-items: flex-start;
+    }
+
+    .india-badge {
+        top: 20px;
+        left: 15px;
+
+        width: 120px;
+
+        padding: 14px 8px;
+
+        font-size: 13px;
+    }
+
+    .hero-content {
+        width: 94%;
+
+        margin-top: 190px;
+
+        transform: none;
+    }
+
+    .brand-circle {
+        width: 80px;
+        height: 80px;
+
+        margin-bottom: -35px;
+    }
+
+    .desi {
+        font-size: 80px;
+
+        letter-spacing: -5px;
+    }
+
+    .thadaka {
+        font-size: 48px;
+
+        letter-spacing: 2px;
+    }
+
+    .tagline {
+        font-size: 14px;
+
+        letter-spacing: 2px;
+
+        line-height: 1.5;
+    }
+
+    .sub-tagline {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+    .price-box {
+        top: 45px;
+        right: 15px;
+
+        width: 135px;
+
+        padding: 12px 8px;
+
+        border-width: 3px;
+
+        box-shadow: 5px 5px 0 #b995e8;
+    }
+
+    .starting {
+        font-size: 10px;
+
+        letter-spacing: 1px;
+    }
+
+    .price {
+        font-size: 50px;
+    }
+
+    .only {
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+    .swad-badge {
+        width: 105px;
+        height: 105px;
+
+        right: 15px;
+        bottom: 135px;
+    }
+
+    .swad-badge span {
+        font-size: 13px;
+    }
+
+    .swad-badge small {
+        font-size: 8px;
+    }
+
+    .bottom-decoration {
+        height: 90px;
+    }
+
+    .landmark {
+        transform: scale(0.7);
+
+        transform-origin: left bottom;
+
+        left: 10px;
+    }
+
+    .purple-one {
+        width: 250px;
+    }
+
+    .purple-two {
+        width: 280px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================================
+     PART 1 — DESI THADAKA HERO
+========================================= -->
+
+<section class="hero">
+
+    <!-- Orange decorative brushes -->
+    <div class="orange-brush brush-one"></div>
+    <div class="orange-brush brush-two"></div>
+
+    <!-- Purple decorative shapes -->
+    <div class="purple-shape purple-one"></div>
+    <div class="purple-shape purple-two"></div>
+
+
+    <!-- India badge -->
+    <div class="india-badge">
+        INDIA KA<br>
+        APNA SNACK
+    </div>
+
+
+    <!-- Main brand -->
+    <div class="hero-content">
+
+        <div class="brand-circle">
+            ✦
+        </div>
+
+        <h1>
+            <span class="desi">Desi</span>
+            <span class="thadaka">THADAKA</span>
+        </h1>
+
+        <div class="brand-line"></div>
+
+        <p class="tagline">
+            BOLD FLAVOURS. DESI CRAVINGS.
+        </p>
+
+        <p class="sub-tagline">
+            INDIA KA APNA SNACK
+        </p>
+
+    </div>
+
+
+    <!-- Starting price -->
+    <div class="price-box">
+
+        <p class="starting">
+            STARTING AT
+        </p>
+
+        <div class="price">
+            ₹5
+        </div>
+
+        <p class="only">
+            ONLY
+        </p>
+
+    </div>
+
+
+    <!-- Desi Swaad badge -->
+    <div class="swad-badge">
+
+        <span>
+            DESI SWAAD
+        </span>
+
+        <small>
+            MADE FOR INDIA
+        </small>
+
+    </div>
+
+
+    <!-- Bottom decoration -->
+    <div class="bottom-decoration">
+
+        <div class="landmark">
+
+            <div class="dome"></div>
+
+            <div class="building">
+                DESI
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
