@@ -94,3 +94,1104 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Desi Thadaka - Snacks</title>
+
+<style>
+
+/* =====================================================
+   DESI THADAKA — PART 2
+   SNACK COLLECTION
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.snacks-section {
+    position: relative;
+    min-height: 100vh;
+
+    padding: 100px 5% 120px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 104, 0, 0.15),
+            transparent 25%
+        ),
+        #0b0b0b;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   DECORATIVE BRUSHES
+===================================================== */
+
+.brush {
+    position: absolute;
+    z-index: 0;
+}
+
+.brush-orange-top {
+    width: 430px;
+    height: 85px;
+
+    top: 20px;
+    right: -100px;
+
+    background: #ff6800;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        12% 10%,
+        25% 25%,
+        40% 5%,
+        58% 25%,
+        75% 8%,
+        100% 28%,
+        94% 75%,
+        75% 60%,
+        55% 85%,
+        35% 65%,
+        15% 85%,
+        0 65%
+    );
+}
+
+
+.brush-purple-left {
+    width: 330px;
+    height: 90px;
+
+    left: -120px;
+    top: 42%;
+
+    background: #b995e8;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 25%,
+        15% 10%,
+        30% 25%,
+        48% 5%,
+        65% 25%,
+        82% 8%,
+        100% 30%,
+        95% 75%,
+        75% 58%,
+        55% 85%,
+        35% 62%,
+        15% 82%,
+        0 65%
+    );
+}
+
+
+.brush-orange-bottom {
+    width: 400px;
+    height: 75px;
+
+    right: -100px;
+    bottom: 5%;
+
+    background: #ff6800;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 12%,
+        32% 28%,
+        48% 5%,
+        65% 25%,
+        82% 10%,
+        100% 30%,
+        94% 75%,
+        75% 58%,
+        55% 85%,
+        35% 65%,
+        15% 85%,
+        0 65%
+    );
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.section-header {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+
+.small-title {
+    color: #ff6800;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 12px;
+}
+
+
+.section-title {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(45px, 7vw, 85px);
+
+    font-style: italic;
+
+    color: #ffffff;
+
+    line-height: 0.9;
+}
+
+
+.section-title span {
+    color: #ff6800;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-style: normal;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+}
+
+
+.section-line {
+    width: 180px;
+    height: 6px;
+
+    margin: 25px auto;
+
+    background: #b995e8;
+
+    transform: rotate(-2deg);
+
+    clip-path: polygon(
+        0 30%,
+        20% 5%,
+        40% 30%,
+        60% 5%,
+        80% 28%,
+        100% 10%,
+        95% 70%,
+        75% 50%,
+        55% 85%,
+        35% 60%,
+        15% 80%
+    );
+}
+
+
+.section-description {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   PRODUCTS GRID
+===================================================== */
+
+.products {
+    position: relative;
+    z-index: 3;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.product-card {
+    position: relative;
+
+    min-height: 550px;
+
+    background: #111111;
+
+    border: 2px solid rgba(255, 104, 0, 0.5);
+
+    padding: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+
+.product-card:nth-child(even) {
+    border-color: rgba(185, 149, 232, 0.65);
+}
+
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff6800;
+}
+
+
+/* =====================================================
+   PRICE BADGE
+===================================================== */
+
+.price-badge {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #ff6800;
+
+    color: #111111;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 1000;
+
+    transform: rotate(8deg);
+
+    z-index: 5;
+
+    border: 3px solid #111111;
+
+    box-shadow: 0 0 0 2px #ff6800;
+}
+
+
+.price-badge small {
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+.price-badge strong {
+    font-size: 21px;
+}
+
+
+/* =====================================================
+   PRODUCT PACKET
+===================================================== */
+
+.packet {
+    position: relative;
+
+    width: 82%;
+
+    height: 310px;
+
+    margin: 35px auto 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #191919,
+            #080808
+        );
+
+    border-radius: 5px;
+
+    border-top: 13px solid #ff6800;
+
+    border-bottom: 13px solid #ff6800;
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.5);
+
+    overflow: hidden;
+}
+
+
+/* Packet purple variation */
+
+.product-card:nth-child(2) .packet,
+.product-card:nth-child(4) .packet {
+
+    border-top-color: #b995e8;
+    border-bottom-color: #b995e8;
+}
+
+
+/* =====================================================
+   PACKET BRAND
+===================================================== */
+
+.packet-brand {
+    margin-top: 20px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-style: italic;
+
+    font-size: 36px;
+
+    font-weight: 900;
+
+    color: #ffffff;
+}
+
+
+.packet-brand span {
+    color: #ff6800;
+}
+
+
+.product-card:nth-child(2) .packet-brand span,
+.product-card:nth-child(4) .packet-brand span {
+    color: #b995e8;
+}
+
+
+/* =====================================================
+   PACKET PRODUCT NAME
+===================================================== */
+
+.packet-name {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 10px 16px;
+
+    background: #ff6800;
+
+    color: #111111;
+
+    font-size: 16px;
+
+    font-weight: 1000;
+
+    letter-spacing: 1px;
+}
+
+
+.product-card:nth-child(2) .packet-name,
+.product-card:nth-child(4) .packet-name {
+    background: #b995e8;
+}
+
+
+/* =====================================================
+   SNACK VISUALS
+===================================================== */
+
+.snack-visual {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 150px;
+    height: 95px;
+
+    border-radius: 50%;
+
+    background: #242424;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+
+/* Potato chips */
+
+.chips {
+    width: 100px;
+    height: 55px;
+
+    background:
+        repeating-linear-gradient(
+            15deg,
+            #f5a623 0px,
+            #f5a623 10px,
+            #e08c15 11px,
+            #e08c15 17px
+        );
+
+    border-radius: 50%;
+
+    transform: rotate(-5deg);
+}
+
+
+/* Peanut */
+
+.peanuts {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    width: 105px;
+
+    gap: 6px;
+
+    justify-content: center;
+}
+
+
+.peanuts span {
+    width: 23px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #c88945;
+
+    transform: rotate(25deg);
+}
+
+
+/* Moong dal */
+
+.dal {
+    width: 110px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 4px;
+}
+
+
+.dal span {
+    width: 13px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #d8b84c;
+}
+
+
+/* Masala */
+
+.masala {
+    width: 115px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    justify-content: center;
+}
+
+
+.masala span {
+    width: 28px;
+    height: 9px;
+
+    border-radius: 6px;
+
+    background: #d96b20;
+
+    transform: rotate(20deg);
+}
+
+
+/* =====================================================
+   PACKET WEIGHT
+===================================================== */
+
+.packet-weight {
+    position: absolute;
+
+    bottom: 12px;
+    left: 15px;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   PRODUCT INFORMATION
+===================================================== */
+
+.product-name {
+    color: #ffffff;
+
+    font-size: 23px;
+
+    font-weight: 1000;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.product-description {
+    margin-top: 7px;
+
+    color: #b995e8;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.product-price {
+    margin-top: 18px;
+
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    background: #ff6800;
+
+    color: #111111;
+
+    font-size: 16px;
+
+    font-weight: 1000;
+}
+
+
+.product-card:nth-child(even) .product-price {
+    background: #b995e8;
+}
+
+
+/* =====================================================
+   VEG SYMBOL
+===================================================== */
+
+.veg {
+    position: absolute;
+
+    bottom: 18px;
+    right: 18px;
+
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid #4caf50;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.veg::after {
+    content: "";
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #4caf50;
+}
+
+
+/* =====================================================
+   BOTTOM MESSAGE
+===================================================== */
+
+.bottom-message {
+    position: relative;
+
+    z-index: 3;
+
+    text-align: center;
+
+    margin-top: 65px;
+}
+
+
+.bottom-message h3 {
+    font-size: 27px;
+
+    color: #ffffff;
+
+    font-weight: 1000;
+}
+
+
+.bottom-message h3 span {
+    color: #ff6800;
+}
+
+
+.bottom-message p {
+    margin-top: 10px;
+
+    color: #b995e8;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .products {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 750px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .snacks-section {
+        padding: 75px 18px 90px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+
+        max-width: 380px;
+    }
+
+    .product-card {
+        min-height: 530px;
+    }
+
+    .section-title {
+        font-size: 52px;
+    }
+
+    .section-description {
+        font-size: 13px;
+    }
+
+    .packet {
+        width: 75%;
+    }
+
+    .brush-orange-top {
+        width: 300px;
+    }
+
+    .brush-purple-left {
+        width: 250px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PART 2 — SNACK COLLECTION
+===================================================== -->
+
+<section class="snacks-section">
+
+
+    <!-- Decorative background -->
+    <div class="brush brush-orange-top"></div>
+    <div class="brush brush-purple-left"></div>
+    <div class="brush brush-orange-bottom"></div>
+
+
+    <!-- SECTION TITLE -->
+    <div class="section-header">
+
+        <div class="small-title">
+            INDIA KA APNA SNACK
+        </div>
+
+        <h2 class="section-title">
+            OUR <span>DESI</span> SNACKS
+        </h2>
+
+        <div class="section-line"></div>
+
+        <p class="section-description">
+            Bold flavours, crispy bites and authentic Indian taste.
+            Choose your favourite Desi Thadaka snack and enjoy
+            great taste at a pocket-friendly price.
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         PRODUCTS
+    ================================================== -->
+
+    <div class="products">
+
+
+        <!-- =============================================
+             POTATO CHIPS
+        ============================================== -->
+
+        <div class="product-card">
+
+            <div class="price-badge">
+                <small>ONLY</small>
+                <strong>₹5</strong>
+            </div>
+
+
+            <div class="packet">
+
+                <div class="packet-brand">
+                    Desi <span>Thadaka</span>
+                </div>
+
+                <div class="packet-name">
+                    POTATO CHIPS
+                </div>
+
+                <div class="snack-visual">
+                    <div class="chips"></div>
+                </div>
+
+                <div class="packet-weight">
+                    CRISPY • FRESH • TASTY
+                </div>
+
+            </div>
+
+
+            <h3 class="product-name">
+                Potato Chips
+            </h3>
+
+            <p class="product-description">
+                CLASSIC SALTED
+            </p>
+
+            <div class="product-price">
+                ₹5
+            </div>
+
+            <div class="veg"></div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             PEANUT & NUT
+        ============================================== -->
+
+        <div class="product-card">
+
+            <div class="price-badge">
+                <small>ONLY</small>
+                <strong>₹5</strong>
+            </div>
+
+
+            <div class="packet">
+
+                <div class="packet-brand">
+                    Desi <span>Thadaka</span>
+                </div>
+
+                <div class="packet-name">
+                    PEANUT & NUT
+                </div>
+
+                <div class="snack-visual">
+
+                    <div class="peanuts">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="packet-weight">
+                    ROASTED • CRUNCHY • TASTY
+                </div>
+
+            </div>
+
+
+            <h3 class="product-name">
+                Peanut & Nut
+            </h3>
+
+            <p class="product-description">
+                ROASTED & TASTY
+            </p>
+
+            <div class="product-price">
+                ₹5
+            </div>
+
+            <div class="veg"></div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             MOONG DAL
+        ============================================== -->
+
+        <div class="product-card">
+
+            <div class="price-badge">
+                <small>ONLY</small>
+                <strong>₹5</strong>
+            </div>
+
+
+            <div class="packet">
+
+                <div class="packet-brand">
+                    Desi <span>Thadaka</span>
+                </div>
+
+                <div class="packet-name">
+                    MOONG DAL
+                </div>
+
+                <div class="snack-visual">
+
+                    <div class="dal">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="packet-weight">
+                    CRISPY • LIGHT • FRESH
+                </div>
+
+            </div>
+
+
+            <h3 class="product-name">
+                Moong Dal
+            </h3>
+
+            <p class="product-description">
+                CRISPY & LIGHT
+            </p>
+
+            <div class="product-price">
+                ₹5
+            </div>
+
+            <div class="veg"></div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             MASALA MUNCH
+        ============================================== -->
+
+        <div class="product-card">
+
+            <div class="price-badge">
+                <small>ONLY</small>
+                <strong>₹10</strong>
+            </div>
+
+
+            <div class="packet">
+
+                <div class="packet-brand">
+                    Desi <span>Thadaka</span>
+                </div>
+
+                <div class="packet-name">
+                    MASALA MUNCH
+                </div>
+
+                <div class="snack-visual">
+
+                    <div class="masala">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="packet-weight">
+                    SPICY • CRUNCHY • DESI
+                </div>
+
+            </div>
+
+
+            <h3 class="product-name">
+                Masala Munch
+            </h3>
+
+            <p class="product-description">
+                SPICY & CRUNCHY
+            </p>
+
+            <div class="product-price">
+                ₹10
+            </div>
+
+            <div class="veg"></div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =================================================
+         BOTTOM MESSAGE
+    ================================================== -->
+
+    <div class="bottom-message">
+
+        <h3>
+            GREAT TASTE.
+            <span>GREAT PRICE.</span>
+        </h3>
+
+        <p>
+            DESI SWAAD • HAR BAAR!
+        </p>
+
+    </div>
+
+
+</section>
+
+
+</body>
+</html>
