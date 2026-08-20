@@ -2097,3 +2097,846 @@ body {
     }
 
 }
+/* =====================================================
+   DESI THADAKA — PART 4 CSS
+   BRAND VALUES & INDIAN IDENTITY
+===================================================== */
+
+.values-section {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 110px 6% 100px;
+
+    background: #0b0b0b;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   DECORATIVE SHAPES
+===================================================== */
+
+.values-orange-shape {
+    position: absolute;
+
+    background: #ff6800;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+.values-shape-1 {
+    width: 400px;
+    height: 80px;
+
+    top: 45px;
+    left: -120px;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        12% 8%,
+        28% 25%,
+        45% 5%,
+        62% 25%,
+        80% 8%,
+        100% 30%,
+        94% 72%,
+        75% 58%,
+        55% 85%,
+        35% 65%,
+        15% 85%,
+        0 65%
+    );
+}
+
+
+.values-shape-3 {
+    width: 430px;
+    height: 75px;
+
+    right: -130px;
+    bottom: 15%;
+
+    transform: rotate(-7deg);
+
+    clip-path: polygon(
+        0 25%,
+        15% 8%,
+        30% 25%,
+        48% 5%,
+        65% 25%,
+        82% 8%,
+        100% 28%,
+        95% 72%,
+        75% 58%,
+        55% 85%,
+        35% 64%,
+        15% 85%,
+        0 65%
+    );
+}
+
+
+.values-purple-shape {
+    position: absolute;
+
+    background: #b995e8;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+.values-shape-2 {
+    width: 330px;
+    height: 85px;
+
+    left: -100px;
+    bottom: 5%;
+
+    transform: rotate(-9deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 10%,
+        30% 25%,
+        50% 5%,
+        68% 25%,
+        85% 10%,
+        100% 30%,
+        94% 75%,
+        75% 58%,
+        55% 85%,
+        35% 65%,
+        15% 85%,
+        0 65%
+    );
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.values-header {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+
+.values-small-title {
+    color: #b995e8;
+
+    font-size: 14px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+.values-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-style: italic;
+
+    font-size: clamp(45px, 7vw, 82px);
+
+    line-height: 0.9;
+
+    color: #ffffff;
+}
+
+
+.values-header h2 span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-style: normal;
+
+    color: #ff6800;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+}
+
+
+.values-line {
+    width: 190px;
+    height: 6px;
+
+    margin: 25px auto;
+
+    background: #b995e8;
+
+    transform: rotate(-2deg);
+
+    clip-path: polygon(
+        0 30%,
+        20% 5%,
+        40% 30%,
+        60% 5%,
+        80% 28%,
+        100% 10%,
+        95% 70%,
+        75% 50%,
+        55% 85%,
+        35% 60%,
+        15% 80%
+    );
+}
+
+
+.values-intro {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #c8c8c8;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   VALUES GRID
+===================================================== */
+
+.values-grid {
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   VALUE CARD
+===================================================== */
+
+.value-card {
+    position: relative;
+
+    min-height: 180px;
+
+    padding: 30px;
+
+    background: #151515;
+
+    border: 2px solid #ff6800;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.value-card:hover {
+    transform: translateX(7px);
+
+    background: #191919;
+}
+
+
+.value-card.purple-value {
+    border-color: #b995e8;
+}
+
+
+/* =====================================================
+   VALUE ICON
+===================================================== */
+
+.value-icon {
+    width: 82px;
+    height: 82px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #ff6800;
+
+    color: #0b0b0b;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 34px;
+
+    font-weight: 1000;
+
+    border: 4px solid #0b0b0b;
+
+    outline: 2px solid #ff6800;
+}
+
+
+.purple-value .value-icon {
+    background: #b995e8;
+
+    outline-color: #b995e8;
+}
+
+
+/* =====================================================
+   VALUE CONTENT
+===================================================== */
+
+.value-content {
+    position: relative;
+
+    padding-top: 8px;
+}
+
+
+.value-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.value-card h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 1000;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.value-card p {
+    max-width: 400px;
+
+    color: #bdbdbd;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.value-card p strong {
+    color: #ff6800;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   INDIA BANNER
+===================================================== */
+
+.india-banner {
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 1200px;
+
+    min-height: 230px;
+
+    margin: 70px auto 0;
+
+    padding: 30px 45px;
+
+    background: #b995e8;
+
+    color: #0b0b0b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+    overflow: hidden;
+
+    clip-path: polygon(
+        1% 5%,
+        12% 2%,
+        25% 6%,
+        40% 2%,
+        55% 6%,
+        70% 2%,
+        85% 6%,
+        99% 2%,
+        98% 94%,
+        85% 98%,
+        70% 94%,
+        55% 98%,
+        40% 94%,
+        25% 98%,
+        12% 94%,
+        1% 98%
+    );
+}
+
+
+/* =====================================================
+   SIMPLE INDIA ART
+===================================================== */
+
+.india-art {
+    position: relative;
+
+    width: 240px;
+    height: 150px;
+
+    flex-shrink: 0;
+}
+
+
+.india-dome {
+    position: absolute;
+
+    left: 82px;
+    top: 12px;
+
+    width: 75px;
+    height: 55px;
+
+    border: 6px solid #0b0b0b;
+
+    border-bottom: none;
+
+    border-radius: 70px 70px 0 0;
+}
+
+
+.india-dome::before {
+    content: "";
+
+    position: absolute;
+
+    left: 31px;
+    top: -27px;
+
+    width: 6px;
+    height: 28px;
+
+    background: #0b0b0b;
+}
+
+
+.india-dome::after {
+    content: "";
+
+    position: absolute;
+
+    left: 27px;
+    top: -32px;
+
+    width: 14px;
+    height: 6px;
+
+    background: #0b0b0b;
+}
+
+
+.india-building {
+    position: absolute;
+
+    left: 35px;
+    bottom: 10px;
+
+    width: 170px;
+    height: 75px;
+
+    border: 6px solid #0b0b0b;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    padding-bottom: 0;
+}
+
+
+.india-building span {
+    display: block;
+
+    width: 20px;
+    height: 55px;
+
+    border: 4px solid #0b0b0b;
+
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   INDIA BANNER TEXT
+===================================================== */
+
+.india-banner-text {
+    flex: 1;
+}
+
+
+.india-banner-text p {
+    color: #ff6800;
+
+    font-size: 13px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 8px;
+}
+
+
+.india-banner-text h3 {
+    font-size: clamp(28px, 4vw, 48px);
+
+    line-height: 0.95;
+
+    font-weight: 1000;
+
+    letter-spacing: -1px;
+}
+
+
+.india-banner-text h3 span {
+    color: #ff6800;
+}
+
+
+.mini-line {
+    width: 100px;
+    height: 4px;
+
+    margin: 18px 0;
+
+    background: #0b0b0b;
+}
+
+
+.india-banner-text small {
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 3px;
+}
+
+
+/* =====================================================
+   DESI STAMP
+===================================================== */
+
+.india-stamp {
+    width: 120px;
+    height: 120px;
+
+    flex-shrink: 0;
+
+    border: 4px solid #0b0b0b;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform: rotate(8deg);
+
+    text-align: center;
+}
+
+
+.india-stamp strong {
+    font-size: 25px;
+
+    line-height: 1;
+}
+
+
+.india-stamp span {
+    margin-top: 5px;
+
+    color: #ff6800;
+
+    font-size: 19px;
+
+    font-weight: 1000;
+}
+
+
+.india-stamp small {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    font-weight: 1000;
+}
+
+
+/* =====================================================
+   FINAL STATEMENT
+===================================================== */
+
+.values-statement {
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 800px;
+
+    margin: 55px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+
+.statement-mark {
+    color: #ff6800;
+
+    font-size: 25px;
+}
+
+
+.values-statement p {
+    font-size: 18px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.values-statement strong {
+    color: #b995e8;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .values-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+    }
+
+
+    .india-banner {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    .india-banner-text {
+        flex: auto;
+
+        width: 100%;
+    }
+
+
+    .mini-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .values-section {
+        padding: 80px 18px;
+    }
+
+
+    .values-header {
+        margin-bottom: 45px;
+    }
+
+
+    .values-header h2 {
+        font-size: 48px;
+    }
+
+
+    .values-intro {
+        font-size: 13px;
+    }
+
+
+    .value-card {
+        min-height: 160px;
+
+        padding: 22px 18px;
+
+        gap: 18px;
+    }
+
+
+    .value-icon {
+        width: 65px;
+        height: 65px;
+
+        font-size: 25px;
+    }
+
+
+    .value-card h3 {
+        font-size: 16px;
+    }
+
+
+    .value-card p {
+        font-size: 11px;
+    }
+
+
+    .india-banner {
+        padding: 35px 20px;
+
+        margin-top: 55px;
+    }
+
+
+    .india-art {
+        transform: scale(0.75);
+    }
+
+
+    .india-banner-text h3 {
+        font-size: 30px;
+    }
+
+
+    .india-banner-text p {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .india-banner-text small {
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .india-stamp {
+        width: 95px;
+        height: 95px;
+    }
+
+
+    .india-stamp strong {
+        font-size: 20px;
+    }
+
+
+    .india-stamp span {
+        font-size: 15px;
+    }
+
+
+    .values-statement {
+        gap: 10px;
+    }
+
+
+    .values-statement p {
+        font-size: 12px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .statement-mark {
+        font-size: 18px;
+    }
+
+}
