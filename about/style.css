@@ -1,0 +1,773 @@
+/* =====================================================
+   DESI THADAKA
+   ABOUT US — PART 1
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #0a0a0a;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   ABOUT HERO
+===================================================== */
+
+.about-hero {
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 6%;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #191919 0%,
+            #0a0a0a 65%
+        );
+}
+
+
+/* =====================================================
+   ORANGE BRUSH
+===================================================== */
+
+.orange-brush {
+    position: absolute;
+
+    background: #ff6800;
+
+    pointer-events: none;
+}
+
+
+.hero-brush {
+    width: 650px;
+    height: 150px;
+
+    top: -30px;
+    right: -150px;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        10% 12%,
+        22% 25%,
+        35% 5%,
+        48% 27%,
+        63% 8%,
+        78% 25%,
+        90% 8%,
+        100% 20%,
+        96% 75%,
+        80% 60%,
+        65% 88%,
+        48% 68%,
+        32% 92%,
+        15% 68%,
+        0 80%
+    );
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.about-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    text-align: center;
+}
+
+
+.eyebrow {
+    color: #b995e8;
+
+    font-size: 14px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+
+.about-hero h1 {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(60px, 9vw, 115px);
+
+    line-height: 0.9;
+
+    font-style: italic;
+
+    font-weight: 900;
+
+    color: #ffffff;
+}
+
+
+.about-hero h1 span {
+    display: block;
+
+    margin-top: 10px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size:
+        clamp(45px, 7vw, 95px);
+
+    font-style: normal;
+
+    font-weight: 1000;
+
+    color: #ff6800;
+
+    letter-spacing: -2px;
+}
+
+
+/* =====================================================
+   HERO LINE
+===================================================== */
+
+.hero-line {
+    width: 190px;
+    height: 6px;
+
+    margin: 30px auto;
+
+    background: #b995e8;
+
+    transform: rotate(-2deg);
+
+    clip-path: polygon(
+        0 30%,
+        20% 5%,
+        40% 30%,
+        60% 5%,
+        80% 28%,
+        100% 10%,
+        95% 70%,
+        75% 50%,
+        55% 85%,
+        35% 60%,
+        15% 80%
+    );
+}
+
+
+.hero-text {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #c9c9c9;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   PRICE BADGE
+===================================================== */
+
+.about-price {
+    position: absolute;
+
+    right: 6%;
+    bottom: 65px;
+
+    width: 145px;
+    height: 145px;
+
+    border-radius: 50%;
+
+    background: #0b0b0b;
+
+    border: 4px solid #ff6800;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(5deg);
+
+    z-index: 4;
+}
+
+
+.about-price small {
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+}
+
+
+.about-price strong {
+    font-size: 48px;
+
+    line-height: 1;
+
+    margin: 4px 0;
+
+    color: #ffffff;
+}
+
+
+.about-price span {
+    color: #ff6800;
+
+    font-size: 11px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   STORY SECTION
+===================================================== */
+
+.story-section {
+    position: relative;
+
+    min-height: 700px;
+
+    padding: 100px 7%;
+
+    background: #b995e8;
+
+    color: #0b0b0b;
+
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   STORY DECORATION
+===================================================== */
+
+.story-decoration {
+    position: absolute;
+
+    width: 500px;
+    height: 90px;
+
+    left: -170px;
+    bottom: 50px;
+
+    background: #ff6800;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 8%,
+        30% 25%,
+        48% 5%,
+        65% 25%,
+        82% 8%,
+        100% 28%,
+        95% 72%,
+        75% 58%,
+        55% 85%,
+        35% 64%,
+        15% 85%,
+        0 65%
+    );
+}
+
+
+/* =====================================================
+   STORY VISUAL
+===================================================== */
+
+.story-visual {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.story-circle {
+    position: relative;
+
+    z-index: 2;
+
+    width: 340px;
+    height: 340px;
+
+    border-radius: 50%;
+
+    background: #0b0b0b;
+
+    border: 8px solid #ff6800;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(-5deg);
+
+    box-shadow:
+        18px 18px 0 rgba(0,0,0,0.15);
+}
+
+
+.circle-small {
+    color: #b995e8;
+
+    font-size: 22px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+}
+
+
+.story-circle strong {
+    margin: 8px 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-style: italic;
+
+    font-size: 70px;
+
+    color: #ffffff;
+}
+
+
+.circle-bottom {
+    color: #ff6800;
+
+    font-size: 14px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+}
+
+
+.story-orange-shape {
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background: #ff6800;
+
+    right: 5%;
+    bottom: 0;
+
+    border-radius: 50%;
+
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   STORY CONTENT
+===================================================== */
+
+.story-content {
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.story-label {
+    color: #ff6800;
+
+    font-size: 14px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+.story-content h2 {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(45px, 6vw, 75px);
+
+    line-height: 0.95;
+
+    font-style: italic;
+
+    color: #0b0b0b;
+}
+
+
+.story-content h2 span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-style: normal;
+
+    font-size: 0.7em;
+
+    color: #ff6800;
+
+    font-weight: 1000;
+}
+
+
+.story-line {
+    width: 160px;
+    height: 6px;
+
+    margin: 25px 0;
+
+    background: #0b0b0b;
+
+    transform: rotate(-2deg);
+}
+
+
+.story-text {
+    max-width: 600px;
+
+    margin-bottom: 18px;
+
+    color: #252525;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   STORY HIGHLIGHTS
+===================================================== */
+
+.story-highlights {
+    margin-top: 35px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.story-highlight {
+    min-width: 125px;
+
+    padding: 15px;
+
+    background: #0b0b0b;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    border-bottom: 5px solid #ff6800;
+}
+
+
+.story-highlight:nth-child(2) {
+    border-bottom-color: #b995e8;
+}
+
+
+.story-highlight strong {
+    display: block;
+
+    color: #ff6800;
+
+    font-size: 28px;
+
+    line-height: 1;
+}
+
+
+.story-highlight:nth-child(2) strong {
+    color: #b995e8;
+}
+
+
+.story-highlight:nth-child(3) strong {
+    color: #ff6800;
+}
+
+
+.story-highlight span {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 8px;
+
+    font-weight: 1000;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .about-price {
+        right: 3%;
+
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .about-price strong {
+        font-size: 40px;
+    }
+
+
+    .story-section {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding:
+            80px 6%;
+    }
+
+
+    .story-visual {
+        min-height: 400px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 600px;
+
+        padding:
+            80px 20px;
+    }
+
+
+    .eyebrow {
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .about-hero h1 {
+        font-size: 55px;
+    }
+
+
+    .about-hero h1 span {
+        font-size: 43px;
+    }
+
+
+    .hero-text {
+        font-size: 13px;
+    }
+
+
+    .about-price {
+        right: 20px;
+        bottom: 25px;
+
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .about-price small {
+        font-size: 7px;
+    }
+
+
+    .about-price strong {
+        font-size: 34px;
+    }
+
+
+    .about-price span {
+        font-size: 8px;
+    }
+
+
+    .story-section {
+        padding:
+            70px 20px;
+
+        gap: 20px;
+    }
+
+
+    .story-visual {
+        min-height: 330px;
+    }
+
+
+    .story-circle {
+        width: 250px;
+        height: 250px;
+
+        border-width: 6px;
+    }
+
+
+    .circle-small {
+        font-size: 15px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .story-circle strong {
+        font-size: 50px;
+    }
+
+
+    .circle-bottom {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .story-orange-shape {
+        width: 210px;
+        height: 210px;
+    }
+
+
+    .story-content h2 {
+        font-size: 48px;
+    }
+
+
+    .story-text {
+        font-size: 13px;
+    }
+
+
+    .story-highlights {
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 8px;
+    }
+
+
+    .story-highlight {
+        min-width: 0;
+
+        padding: 12px 5px;
+    }
+
+
+    .story-highlight strong {
+        font-size: 22px;
+    }
+
+
+    .story-highlight span {
+        font-size: 7px;
+    }
+
+}
