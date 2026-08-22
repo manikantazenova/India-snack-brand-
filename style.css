@@ -1013,3 +1013,675 @@ body {
     }
 
 }
+/* =========================================
+   DESI THADAKA
+   PART 2 — SNACKS
+   ORANGE + BLACK + LIGHT PURPLE
+   NO WHITE
+========================================= */
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.snacks-section {
+
+    position: relative;
+
+    padding: 120px 6%;
+
+    background: #b995e8;
+
+    color: #090909;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.snacks-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+
+}
+
+
+.snacks-heading > p:first-child {
+
+    color: #ff6800;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.snacks-heading h2 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(55px, 8vw, 95px);
+
+    line-height: .8;
+
+    font-style: italic;
+
+    color: #090909;
+
+}
+
+
+.snacks-heading h2 span {
+
+    display: block;
+
+    margin-top: 12px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-style: normal;
+
+    font-weight: 1000;
+
+    color: #ff6800;
+
+    letter-spacing: -5px;
+
+}
+
+
+.heading-line {
+
+    width: 180px;
+
+    height: 7px;
+
+    margin: 28px auto;
+
+    background: #090909;
+
+    transform: rotate(-3deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 5%,
+        30% 28%,
+        48% 5%,
+        65% 30%,
+        82% 7%,
+        100% 30%,
+        95% 72%,
+        78% 50%,
+        60% 90%,
+        42% 60%,
+        22% 88%,
+        0 65%
+    );
+
+}
+
+
+.snacks-intro {
+
+    max-width: 560px;
+
+    margin: auto;
+
+    color: #090909;
+
+    opacity: .75;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.snacks-grid {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.snack-card {
+
+    position: relative;
+
+    background: #090909;
+
+    overflow: hidden;
+
+    color: #b995e8;
+
+    border-bottom: 7px solid #ff6800;
+
+}
+
+
+.snack-card.purple-card {
+
+    border-bottom-color: #b995e8;
+
+}
+
+
+.snack-number {
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 15px;
+
+    right: 16px;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+    color: #ff6800;
+
+}
+
+
+/* =========================================
+   PRODUCT VISUAL
+========================================= */
+
+.snack-visual {
+
+    height: 285px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+}
+
+
+.potato {
+
+    background: #ff6800;
+
+}
+
+
+.peanut {
+
+    background: #090909;
+
+    border-bottom:
+        5px solid #b995e8;
+
+}
+
+
+.moong {
+
+    background: #ff6800;
+
+}
+
+
+.masala {
+
+    background: #090909;
+
+    border-bottom:
+        5px solid #b995e8;
+
+}
+
+
+/* =========================================
+   VISUAL CIRCLE
+========================================= */
+
+.snack-visual::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+
+    height: 190px;
+
+    border-radius: 50%;
+
+    border:
+        8px solid #b995e8;
+
+    transform: rotate(-8deg);
+
+}
+
+
+.potato::before,
+.moong::before {
+
+    border-color: #090909;
+
+}
+
+
+.peanut::before,
+.masala::before {
+
+    border-color: #ff6800;
+
+}
+
+
+/* =========================================
+   VISUAL TEXT
+========================================= */
+
+.snack-circle-text {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    font-style: italic;
+
+    color: #090909;
+
+}
+
+
+.peanut .snack-circle-text,
+.masala .snack-circle-text {
+
+    color: #b995e8;
+
+}
+
+
+.snack-visual-title {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 5px;
+
+    font-size: 45px;
+
+    font-weight: 1000;
+
+    letter-spacing: -3px;
+
+    color: #090909;
+
+}
+
+
+.peanut .snack-visual-title,
+.masala .snack-visual-title {
+
+    color: #ff6800;
+
+}
+
+
+/* =========================================
+   CARD DETAILS
+========================================= */
+
+.snack-details {
+
+    padding: 24px 22px 25px;
+
+}
+
+
+.snack-category {
+
+    color: #ff6800;
+
+    font-size: 8px;
+
+    font-weight: 1000;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.purple-card .snack-category {
+
+    color: #b995e8;
+
+}
+
+
+.snack-details h3 {
+
+    color: #b995e8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 27px;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+
+}
+
+
+.snack-details > p:not(.snack-category) {
+
+    color: #b995e8;
+
+    opacity: .65;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    min-height: 58px;
+
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.snack-price {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid #333;
+
+}
+
+
+.snack-price span {
+
+    color: #b995e8;
+
+    font-size: 7px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+}
+
+
+.snack-price strong {
+
+    color: #ff6800;
+
+    font-size: 35px;
+
+    line-height: .8;
+
+}
+
+
+/* =========================================
+   PRICE STRIP
+========================================= */
+
+.price-strip {
+
+    max-width: 1250px;
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    background: #090909;
+
+}
+
+
+.price-strip div {
+
+    min-height: 105px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-right:
+        1px solid #333;
+
+}
+
+
+.price-strip div:last-child {
+
+    border-right: none;
+
+}
+
+
+.price-strip span {
+
+    color: #b995e8;
+
+    font-size: 7px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.price-strip strong {
+
+    color: #ff6800;
+
+    font-size: 30px;
+
+    font-weight: 1000;
+
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.snack-card {
+
+    transition:
+        transform .25s ease;
+
+}
+
+
+.snack-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.snack-card:hover .snack-visual {
+
+    filter:
+        brightness(1.08);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .snacks-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .snacks-section {
+
+        padding:
+            80px 20px;
+
+    }
+
+
+    .snacks-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .snacks-heading h2 {
+
+        font-size: 58px;
+
+    }
+
+
+    .snacks-heading h2 span {
+
+        font-size: 50px;
+
+    }
+
+
+    .snacks-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .snack-visual {
+
+        height: 260px;
+
+    }
+
+
+    .price-strip {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .price-strip div {
+
+        border-bottom:
+            1px solid #333;
+
+    }
+
+
+    .price-strip div:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+}
