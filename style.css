@@ -1,0 +1,1015 @@
+/* =========================================
+   DESI THADAKA
+   PART 1 — HERO
+   COLOURS:
+   ORANGE
+   BLACK
+   LIGHT PURPLE
+
+   NO WHITE
+========================================= */
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090909;
+    color: #ff6800;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    background: #090909;
+
+    overflow: hidden;
+
+    padding: 0 6%;
+}
+
+
+/* =========================================
+   DECORATIVE ORANGE SHAPE
+========================================= */
+
+.hero-orange-shape {
+
+    position: absolute;
+
+    width: 600px;
+    height: 150px;
+
+    top: -45px;
+    right: -160px;
+
+    background: #ff6800;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        12% 10%,
+        25% 27%,
+        40% 5%,
+        55% 27%,
+        70% 8%,
+        85% 25%,
+        100% 8%,
+        96% 75%,
+        80% 58%,
+        63% 88%,
+        45% 65%,
+        27% 90%,
+        12% 68%,
+        0 82%
+    );
+}
+
+
+/* =========================================
+   DECORATIVE PURPLE SHAPE
+========================================= */
+
+.hero-purple-shape {
+
+    position: absolute;
+
+    width: 420px;
+    height: 100px;
+
+    left: -150px;
+    bottom: 100px;
+
+    background: #b995e8;
+
+    transform: rotate(-7deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 8%,
+        30% 25%,
+        48% 5%,
+        65% 28%,
+        82% 8%,
+        100% 25%,
+        94% 75%,
+        78% 58%,
+        58% 90%,
+        40% 65%,
+        20% 88%,
+        0 68%
+    );
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    position: relative;
+
+    z-index: 10;
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: .75;
+
+    transform: rotate(-3deg);
+
+}
+
+
+.logo span {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    font-style: italic;
+
+    color: #b995e8;
+
+}
+
+
+.logo strong {
+
+    margin-top: 8px;
+
+    font-size: 26px;
+
+    font-weight: 1000;
+
+    letter-spacing: -1px;
+
+    color: #ff6800;
+
+}
+
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-links {
+
+    display: flex;
+
+    gap: 38px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #b995e8;
+
+    font-size: 11px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+    transition: .2s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #ff6800;
+
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu-box {
+
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #ff6800;
+
+    color: #090909;
+
+    font-size: 19px;
+
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    min-height:
+        calc(100vh - 160px);
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+
+/* =========================================
+   HERO TEXT
+========================================= */
+
+.hero-text {
+
+    padding-bottom: 40px;
+
+}
+
+
+.small-title {
+
+    color: #b995e8;
+
+    font-size: 12px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero-text h1 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(70px, 10vw, 135px);
+
+    line-height: .78;
+
+    font-style: italic;
+
+    color: #b995e8;
+
+}
+
+
+.hero-text h1 span {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-style: normal;
+
+    font-size:
+        clamp(55px, 8vw, 110px);
+
+    font-weight: 1000;
+
+    letter-spacing: -5px;
+
+    color: #ff6800;
+
+}
+
+
+/* =========================================
+   BRUSH LINE
+========================================= */
+
+.brush-line {
+
+    width: 230px;
+    height: 8px;
+
+    margin: 30px 0;
+
+    background: #b995e8;
+
+    transform: rotate(-3deg);
+
+    clip-path: polygon(
+        0 35%,
+        15% 5%,
+        30% 30%,
+        48% 8%,
+        65% 35%,
+        82% 10%,
+        100% 30%,
+        95% 70%,
+        78% 52%,
+        60% 88%,
+        42% 60%,
+        22% 85%,
+        0 65%
+    );
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+
+    color: #b995e8;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    max-width: 450px;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding:
+        0 25px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.primary-btn {
+
+    background: #ff6800;
+
+    color: #090909;
+
+}
+
+
+.secondary-btn {
+
+    border: 2px solid #b995e8;
+
+    color: #b995e8;
+
+}
+
+
+.primary-btn:hover {
+
+    background: #b995e8;
+
+}
+
+
+.secondary-btn:hover {
+
+    background: #b995e8;
+
+    color: #090909;
+
+}
+
+
+/* =========================================
+   PRODUCT VISUAL
+========================================= */
+
+.hero-product {
+
+    position: relative;
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================
+   PRODUCT CIRCLE
+========================================= */
+
+.product-circle {
+
+    position: relative;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: #ff6800;
+
+    border:
+        12px solid #b995e8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform: rotate(-7deg);
+
+    box-shadow:
+        25px 25px 0 #b995e8;
+
+}
+
+
+/* =========================================
+   PRODUCT TEXT
+========================================= */
+
+.product-name {
+
+    color: #090909;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 42px;
+
+    font-style: italic;
+
+    font-weight: 900;
+
+}
+
+
+.product-main {
+
+    margin-top: 5px;
+
+    color: #090909;
+
+    font-size: 65px;
+
+    font-weight: 1000;
+
+    letter-spacing: -4px;
+
+}
+
+
+.product-sub {
+
+    margin-top: 15px;
+
+    padding:
+        8px 15px;
+
+    background: #090909;
+
+    color: #b995e8;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================================
+   PRICE BADGE
+========================================= */
+
+.price-badge {
+
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 65px;
+
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+
+    background: #b995e8;
+
+    border: 5px solid #090909;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform: rotate(8deg);
+
+    z-index: 5;
+
+}
+
+
+.price-badge small {
+
+    color: #090909;
+
+    font-size: 8px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+}
+
+
+.price-badge strong {
+
+    color: #ff6800;
+
+    font-size: 45px;
+
+    line-height: 1;
+
+}
+
+
+.price-badge span {
+
+    color: #090909;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   VERTICAL TEXT
+========================================= */
+
+.vertical-text {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 50%;
+
+    color: #ff6800;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+    transform:
+        rotate(-90deg)
+        translateX(-50%);
+
+}
+
+
+/* =========================================
+   BOTTOM STRIP
+========================================= */
+
+.hero-bottom {
+
+    position: absolute;
+
+    z-index: 5;
+
+    left: 6%;
+    right: 6%;
+    bottom: 25px;
+
+    min-height: 45px;
+
+    border-top:
+        1px solid #b995e8;
+
+    border-bottom:
+        1px solid #b995e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.hero-bottom span {
+
+    color: #b995e8;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 40px;
+
+    }
+
+
+    .hero-text {
+
+        padding-bottom: 0;
+
+    }
+
+
+    .brush-line {
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .hero-description {
+
+        margin: auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-product {
+
+        min-height: 450px;
+
+    }
+
+
+    .product-circle {
+
+        width: 330px;
+        height: 330px;
+
+    }
+
+
+    .product-main {
+
+        font-size: 50px;
+
+    }
+
+
+    .vertical-text {
+
+        display: none;
+
+    }
+
+
+    .hero-bottom {
+
+        display: none;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+
+        padding: 0 20px;
+
+    }
+
+
+    .navbar {
+
+        height: 80px;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+    .menu-box {
+
+        display: flex;
+
+    }
+
+
+    .hero-content {
+
+        min-height:
+            calc(100vh - 80px);
+
+        gap: 20px;
+
+        padding-top: 30px;
+
+        padding-bottom: 40px;
+
+    }
+
+
+    .small-title {
+
+        font-size: 9px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 62px;
+
+    }
+
+
+    .hero-text h1 span {
+
+        font-size: 48px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 12px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 190px;
+
+    }
+
+
+    .hero-product {
+
+        min-height: 330px;
+
+    }
+
+
+    .product-circle {
+
+        width: 250px;
+        height: 250px;
+
+        border-width: 8px;
+
+        box-shadow:
+            15px 15px 0 #b995e8;
+
+    }
+
+
+    .product-name {
+
+        font-size: 26px;
+
+    }
+
+
+    .product-main {
+
+        font-size: 39px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .product-sub {
+
+        font-size: 6px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .price-badge {
+
+        width: 90px;
+        height: 90px;
+
+        right: 5px;
+
+        bottom: 15px;
+
+        border-width: 4px;
+
+    }
+
+
+    .price-badge strong {
+
+        font-size: 31px;
+
+    }
+
+
+    .price-badge small {
+
+        font-size: 6px;
+
+    }
+
+
+    .price-badge span {
+
+        font-size: 7px;
+
+    }
+
+
+    .hero-orange-shape {
+
+        width: 350px;
+
+        height: 100px;
+
+        right: -150px;
+
+    }
+
+
+    .hero-purple-shape {
+
+        width: 280px;
+
+        height: 70px;
+
+        left: -150px;
+
+    }
+
+}
