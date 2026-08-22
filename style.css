@@ -1685,3 +1685,758 @@ body {
     }
 
 }
+/* =========================================
+   DESI THADAKA
+   PART 3 — ABOUT US
+
+   ORANGE + BLACK + LIGHT PURPLE
+   NO WHITE
+========================================= */
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.about-section {
+
+    position: relative;
+
+    min-height: 850px;
+
+    padding: 120px 6% 60px;
+
+    background: #090909;
+
+    color: #b995e8;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   DECORATIVE ORANGE
+========================================= */
+
+.about-orange-shape {
+
+    position: absolute;
+
+    width: 520px;
+
+    height: 115px;
+
+    top: 130px;
+
+    right: -180px;
+
+    background: #ff6800;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        12% 8%,
+        25% 28%,
+        40% 5%,
+        55% 30%,
+        70% 7%,
+        85% 28%,
+        100% 8%,
+        95% 75%,
+        80% 55%,
+        63% 90%,
+        45% 65%,
+        27% 88%,
+        12% 65%,
+        0 80%
+    );
+
+}
+
+
+/* =========================================
+   DECORATIVE PURPLE
+========================================= */
+
+.about-purple-shape {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 90px;
+
+    bottom: 130px;
+
+    left: -230px;
+
+    background: #b995e8;
+
+    transform: rotate(7deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 8%,
+        30% 25%,
+        48% 5%,
+        65% 30%,
+        82% 8%,
+        100% 25%,
+        95% 75%,
+        78% 55%,
+        60% 90%,
+        40% 65%,
+        20% 88%,
+        0 68%
+    );
+
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.about-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 90px;
+
+}
+
+
+/* =========================================
+   VISUAL
+========================================= */
+
+.about-visual {
+
+    position: relative;
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================
+   MAIN CIRCLE
+========================================= */
+
+.about-circle {
+
+    width: 430px;
+
+    height: 430px;
+
+    border-radius: 50%;
+
+    background: #ff6800;
+
+    border:
+        12px solid #b995e8;
+
+    box-shadow:
+        25px 25px 0 #b995e8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform: rotate(-6deg);
+
+}
+
+
+/* =========================================
+   CIRCLE TEXT
+========================================= */
+
+.circle-small {
+
+    color: #090909;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.circle-big {
+
+    color: #090909;
+
+    font-size: 48px;
+
+    line-height: .85;
+
+    font-weight: 1000;
+
+    letter-spacing: -3px;
+
+}
+
+
+/* =========================================
+   INDIA STAMP
+========================================= */
+
+.about-stamp {
+
+    position: absolute;
+
+    right: 4%;
+
+    bottom: 70px;
+
+    width: 115px;
+
+    height: 115px;
+
+    border-radius: 50%;
+
+    background: #b995e8;
+
+    border:
+        6px solid #090909;
+
+    color: #090909;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    font-weight: 1000;
+
+    letter-spacing: 3px;
+
+    transform: rotate(9deg);
+
+}
+
+
+/* =========================================
+   SIDE TEXT
+========================================= */
+
+.about-side-text {
+
+    position: absolute;
+
+    left: -20px;
+
+    top: 50%;
+
+    transform:
+        rotate(-90deg)
+        translateX(-50%);
+
+    color: #ff6800;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+
+    max-width: 650px;
+
+}
+
+
+.about-label {
+
+    color: #ff6800;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.about-content h2 {
+
+    color: #b995e8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(55px, 7vw, 90px);
+
+    line-height: .82;
+
+    font-style: italic;
+
+}
+
+
+.about-content h2 span {
+
+    display: block;
+
+    margin-top: 12px;
+
+    color: #ff6800;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-style: normal;
+
+    font-weight: 1000;
+
+    letter-spacing: -4px;
+
+}
+
+
+/* =========================================
+   LINE
+========================================= */
+
+.about-line {
+
+    width: 190px;
+
+    height: 7px;
+
+    margin: 28px 0;
+
+    background: #b995e8;
+
+    transform: rotate(-3deg);
+
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.about-main-text {
+
+    color: #b995e8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    max-width: 600px;
+
+}
+
+
+.about-text {
+
+    color: #b995e8;
+
+    opacity: .65;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-top: 18px;
+
+    max-width: 570px;
+
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.about-values {
+
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.value-box {
+
+    padding: 20px 15px;
+
+    border:
+        1px solid #333;
+
+    background: #090909;
+
+}
+
+
+.value-box strong {
+
+    display: block;
+
+    color: #ff6800;
+
+    font-size: 10px;
+
+    margin-bottom: 17px;
+
+}
+
+
+.value-box h3 {
+
+    color: #b995e8;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 9px;
+
+}
+
+
+.value-box p {
+
+    color: #b995e8;
+
+    opacity: .55;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   BOTTOM STATEMENT
+========================================= */
+
+.about-bottom {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 1250px;
+
+    margin: 80px auto 0;
+
+    min-height: 55px;
+
+    border-top:
+        1px solid #b995e8;
+
+    border-bottom:
+        1px solid #b995e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.about-bottom span {
+
+    color: #b995e8;
+
+    font-size: 8px;
+
+    font-weight: 1000;
+
+    letter-spacing: 3px;
+
+}
+
+
+.about-bottom strong {
+
+    color: #ff6800;
+
+    font-size: 13px;
+
+    font-weight: 1000;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+        text-align: center;
+
+    }
+
+
+    .about-content {
+
+        margin: auto;
+
+    }
+
+
+    .about-line {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .about-main-text,
+    .about-text {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .about-values {
+
+        text-align: left;
+
+    }
+
+
+    .about-side-text {
+
+        display: none;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .about-section {
+
+        padding:
+            80px 20px 45px;
+
+    }
+
+
+    .about-visual {
+
+        min-height: 350px;
+
+    }
+
+
+    .about-circle {
+
+        width: 275px;
+
+        height: 275px;
+
+        border-width: 8px;
+
+        box-shadow:
+            15px 15px 0 #b995e8;
+
+    }
+
+
+    .circle-big {
+
+        font-size: 32px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .circle-small {
+
+        font-size: 7px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .about-stamp {
+
+        width: 75px;
+
+        height: 75px;
+
+        right: 3%;
+
+        bottom: 20px;
+
+        font-size: 11px;
+
+        border-width: 4px;
+
+    }
+
+
+    .about-content h2 {
+
+        font-size: 57px;
+
+    }
+
+
+    .about-content h2 span {
+
+        font-size: 50px;
+
+    }
+
+
+    .about-main-text {
+
+        font-size: 18px;
+
+    }
+
+
+    .about-text {
+
+        font-size: 11px;
+
+    }
+
+
+    .about-values {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-bottom {
+
+        margin-top: 50px;
+
+        gap: 10px;
+
+    }
+
+
+    .about-bottom span {
+
+        font-size: 6px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .about-bottom strong {
+
+        font-size: 9px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .about-orange-shape {
+
+        width: 300px;
+
+        height: 75px;
+
+        right: -150px;
+
+    }
+
+
+    .about-purple-shape {
+
+        width: 300px;
+
+        height: 65px;
+
+        left: -160px;
+
+    }
+
+}
