@@ -2440,3 +2440,574 @@ body {
     }
 
 }
+/* =========================================
+   DESI THADAKA
+   PART 4 — WHY CHOOSE US
+
+   ORANGE + BLACK + LIGHT PURPLE
+   NO WHITE
+========================================= */
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.why-section {
+
+    position: relative;
+
+    padding: 120px 6%;
+
+    background: #b995e8;
+
+    color: #090909;
+
+    overflow: hidden;
+
+}
+
+
+.why-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.why-heading {
+
+    text-align: center;
+
+    max-width: 850px;
+
+    margin: 0 auto 65px;
+
+}
+
+
+.why-heading > p {
+
+    color: #ff6800;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.why-heading h2 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(55px, 8vw, 90px);
+
+    line-height: .82;
+
+    font-style: italic;
+
+    color: #090909;
+
+}
+
+
+.why-heading h2 span {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-style: normal;
+
+    color: #ff6800;
+
+    font-weight: 1000;
+
+    letter-spacing: -4px;
+
+}
+
+
+.why-line {
+
+    width: 190px;
+
+    height: 7px;
+
+    margin: 28px auto 0;
+
+    background: #090909;
+
+    transform: rotate(-3deg);
+
+}
+
+
+/* =========================================
+   FEATURES GRID
+========================================= */
+
+.why-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.why-card {
+
+    position: relative;
+
+    min-height: 340px;
+
+    padding: 30px 24px;
+
+    background: #090909;
+
+    border-bottom:
+        7px solid #ff6800;
+
+    overflow: hidden;
+
+}
+
+
+.why-card.purple-feature {
+
+    border-bottom-color: #b995e8;
+
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.why-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #ff6800;
+
+    color: #090909;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    margin-bottom: 55px;
+
+}
+
+
+.purple-feature .why-icon {
+
+    background: #b995e8;
+
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.why-card h3 {
+
+    color: #b995e8;
+
+    font-size: 25px;
+
+    line-height: .95;
+
+    font-weight: 1000;
+
+    letter-spacing: -1px;
+
+}
+
+
+.why-card h3 span {
+
+    display: block;
+
+    color: #ff6800;
+
+    margin-top: 5px;
+
+}
+
+
+.purple-feature h3 span {
+
+    color: #b995e8;
+
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.why-card p {
+
+    margin-top: 22px;
+
+    max-width: 210px;
+
+    color: #b995e8;
+
+    opacity: .65;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   PLUS MARK
+========================================= */
+
+.card-mark {
+
+    position: absolute;
+
+    right: 18px;
+
+    bottom: 12px;
+
+    color: #ff6800;
+
+    font-size: 45px;
+
+    font-weight: 1000;
+
+    opacity: .4;
+
+}
+
+
+.purple-feature .card-mark {
+
+    color: #b995e8;
+
+}
+
+
+/* =========================================
+   STATEMENT
+========================================= */
+
+.why-statement {
+
+    margin-top: 35px;
+
+    min-height: 190px;
+
+    padding: 30px 40px;
+
+    background: #090909;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-left:
+        8px solid #ff6800;
+
+}
+
+
+.statement-left > p {
+
+    color: #ff6800;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.statement-left h3 {
+
+    color: #b995e8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(32px, 5vw, 60px);
+
+    line-height: .85;
+
+    font-style: italic;
+
+}
+
+
+.statement-left h3 span {
+
+    display: block;
+
+    color: #ff6800;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-style: normal;
+
+    font-weight: 1000;
+
+    margin-top: 8px;
+
+}
+
+
+/* =========================================
+   PRICE CIRCLE
+========================================= */
+
+.round-price {
+
+    width: 125px;
+
+    height: 125px;
+
+    border-radius: 50%;
+
+    background: #b995e8;
+
+    border:
+        5px solid #ff6800;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform: rotate(8deg);
+
+}
+
+
+.round-price small {
+
+    color: #090909;
+
+    font-size: 7px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+}
+
+
+.round-price strong {
+
+    color: #ff6800;
+
+    font-size: 43px;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.why-card {
+
+    transition:
+        transform .25s ease;
+
+}
+
+
+.why-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.why-card:hover .why-icon {
+
+    transform:
+        rotate(10deg);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .why-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .why-section {
+
+        padding:
+            80px 20px;
+
+    }
+
+
+    .why-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .why-heading h2 {
+
+        font-size: 56px;
+
+    }
+
+
+    .why-heading h2 span {
+
+        font-size: 47px;
+
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+
+    .why-card {
+
+        min-height: 290px;
+
+    }
+
+
+    .why-statement {
+
+        min-height: 150px;
+
+        padding:
+            25px 20px;
+
+        border-left-width: 5px;
+
+    }
+
+
+    .statement-left h3 {
+
+        font-size: 30px;
+
+    }
+
+
+    .round-price {
+
+        width: 82px;
+
+        height: 82px;
+
+        border-width: 3px;
+
+    }
+
+
+    .round-price strong {
+
+        font-size: 29px;
+
+    }
+
+
+    .round-price small {
+
+        font-size: 5px;
+
+    }
+
+}
