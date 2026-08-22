@@ -3011,3 +3011,689 @@ body {
     }
 
 }
+/* =========================================
+   DESI THADAKA
+   PART 5 — CONTACT + CTA + FOOTER
+
+   ORANGE + BLACK + LIGHT PURPLE
+   NO WHITE
+========================================= */
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.contact-section {
+
+    position: relative;
+
+    min-height: 800px;
+
+    padding:
+        120px 6% 35px;
+
+    background: #090909;
+
+    color: #b995e8;
+
+    overflow: hidden;
+
+}
+
+
+.contact-container {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   DECORATIVE ORANGE SHAPE
+========================================= */
+
+.contact-orange-shape {
+
+    position: absolute;
+
+    width: 550px;
+
+    height: 120px;
+
+    top: 80px;
+
+    right: -190px;
+
+    background: #ff6800;
+
+    transform: rotate(-8deg);
+
+    clip-path: polygon(
+        0 30%,
+        12% 8%,
+        25% 28%,
+        40% 5%,
+        55% 30%,
+        70% 7%,
+        85% 28%,
+        100% 8%,
+        95% 75%,
+        80% 55%,
+        63% 90%,
+        45% 65%,
+        27% 88%,
+        12% 65%,
+        0 80%
+    );
+
+}
+
+
+/* =========================================
+   DECORATIVE PURPLE SHAPE
+========================================= */
+
+.contact-purple-shape {
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 90px;
+
+    left: -190px;
+
+    top: 360px;
+
+    background: #b995e8;
+
+    transform: rotate(7deg);
+
+    clip-path: polygon(
+        0 30%,
+        15% 8%,
+        30% 25%,
+        48% 5%,
+        65% 30%,
+        82% 8%,
+        100% 25%,
+        95% 75%,
+        78% 55%,
+        60% 90%,
+        40% 65%,
+        20% 88%,
+        0 68%
+    );
+
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.final-cta {
+
+    max-width: 900px;
+
+    margin:
+        0 auto 90px;
+
+    text-align: center;
+
+}
+
+
+.cta-label {
+
+    color: #ff6800;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.final-cta h2 {
+
+    color: #b995e8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-style: italic;
+
+    font-size:
+        clamp(65px, 9vw, 110px);
+
+    line-height: .78;
+
+}
+
+
+.final-cta h2 span {
+
+    display: block;
+
+    margin-top: 12px;
+
+    color: #ff6800;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-style: normal;
+
+    font-weight: 1000;
+
+    letter-spacing: -5px;
+
+}
+
+
+.cta-text {
+
+    max-width: 550px;
+
+    margin:
+        30px auto;
+
+    color: #b995e8;
+
+    opacity: .65;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding:
+        0 32px;
+
+    background: #ff6800;
+
+    color: #090909;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+    transition: .2s;
+
+}
+
+
+.cta-button:hover {
+
+    background: #b995e8;
+
+}
+
+
+/* =========================================
+   CONTACT GRID
+========================================= */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid #333;
+
+    border-bottom:
+        1px solid #333;
+
+}
+
+
+.contact-box {
+
+    position: relative;
+
+    min-height: 180px;
+
+    padding:
+        28px 22px;
+
+    border-right:
+        1px solid #333;
+
+}
+
+
+.contact-box:last-child {
+
+    border-right: none;
+
+}
+
+
+.contact-number {
+
+    display: block;
+
+    color: #ff6800;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.contact-box h3 {
+
+    color: #b995e8;
+
+    font-size: 13px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.contact-box p {
+
+    color: #b995e8;
+
+    opacity: .6;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    padding-top: 45px;
+
+}
+
+
+/* =========================================
+   FOOTER LOGO
+========================================= */
+
+.footer-logo {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: .75;
+
+    width: fit-content;
+
+}
+
+
+.footer-logo span {
+
+    color: #b995e8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+}
+
+
+.footer-logo strong {
+
+    margin-top: 8px;
+
+    color: #ff6800;
+
+    font-size: 27px;
+
+    font-weight: 1000;
+
+    letter-spacing: -1px;
+
+}
+
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: -25px;
+
+}
+
+
+.footer-links a {
+
+    color: #b995e8;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: #ff6800;
+
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid #333;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.footer-bottom span {
+
+    color: #b995e8;
+
+    opacity: .5;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.footer-bottom strong {
+
+    color: #ff6800;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.contact-box {
+
+    transition:
+        background .2s ease;
+
+}
+
+
+.contact-box:hover {
+
+    background: #111;
+
+}
+
+
+.contact-box:hover .contact-number {
+
+    color: #b995e8;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .contact-box:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .contact-box:nth-child(1),
+    .contact-box:nth-child(2) {
+
+        border-bottom:
+            1px solid #333;
+
+    }
+
+
+    .footer-links {
+
+        margin-top: 35px;
+
+        justify-content: flex-start;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+
+        padding:
+            80px 20px 25px;
+
+    }
+
+
+    .final-cta {
+
+        margin-bottom: 60px;
+
+    }
+
+
+    .final-cta h2 {
+
+        font-size: 60px;
+
+    }
+
+
+    .final-cta h2 span {
+
+        font-size: 50px;
+
+    }
+
+
+    .cta-text {
+
+        font-size: 11px;
+
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-box {
+
+        min-height: 140px;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid #333;
+
+    }
+
+
+    .contact-box:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+    .contact-number {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .footer {
+
+        padding-top: 35px;
+
+    }
+
+
+    .footer-links {
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+
+        margin-top: 30px;
+
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+    }
+
+
+    .footer-bottom strong {
+
+        font-size: 7px;
+
+    }
+
+
+    .contact-orange-shape {
+
+        width: 320px;
+
+        height: 75px;
+
+        right: -150px;
+
+    }
+
+
+    .contact-purple-shape {
+
+        width: 300px;
+
+        height: 65px;
+
+        left: -160px;
+
+    }
+
+}
